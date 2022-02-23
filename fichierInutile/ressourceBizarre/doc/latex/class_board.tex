@@ -1,0 +1,149 @@
+\hypertarget{class_board}{}\doxysection{Board Class Reference}
+\label{class_board}\index{Board@{Board}}
+
+
+Class who represent a board.  
+
+
+
+
+{\ttfamily \#include $<$Board.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_board_a9ee491d4fea680cf69b033374a9fdfcb}\label{class_board_a9ee491d4fea680cf69b033374a9fdfcb}} 
+\mbox{\hyperlink{class_board_a9ee491d4fea680cf69b033374a9fdfcb}{Board}} ()
+\begin{DoxyCompactList}\small\item\em Constructor of the board. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_board_a6e2c8d4dfb5b9b7cc5eae6d81cc2a5f9}{is\+Inside}} (\mbox{\hyperlink{class_position}{Position}} pos)
+\begin{DoxyCompactList}\small\item\em Determines if the position is inside the board. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_board_a57aad4daea0b9786e8b60230d4eb6722}{push}} (\mbox{\hyperlink{class_piece}{Piece}} p, \mbox{\hyperlink{class_position}{Position}} pos)
+\begin{DoxyCompactList}\small\item\em Make a movement. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_board_a9ebc7a70a2ee91147959910345ad4eac}{is\+Free}} (\mbox{\hyperlink{class_position}{Position}} position)
+\begin{DoxyCompactList}\small\item\em Determines if the position is free. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_board_a1233daa8ce9bcf312874fd81370c187b}{is\+My\+Own}} (\mbox{\hyperlink{class_position}{Position}} position, Player\+Color color)
+\begin{DoxyCompactList}\small\item\em Determines if a piece belong to a player. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_piece}{Piece}} \mbox{\hyperlink{class_board_a1e8a42da489bdfcc9d7c3ddb8e662bc9}{get\+Piece}} (\mbox{\hyperlink{class_position}{Position}} position)
+\begin{DoxyCompactList}\small\item\em Gives a piece. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_board_af5494dd5fdd306e0cdaa336c1727b217}{remove}} (\mbox{\hyperlink{class_position}{Position}} position)
+\begin{DoxyCompactList}\small\item\em Remove a piece at a position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_board_a35e21e0a045395d1735077da26977a44}\label{class_board_a35e21e0a045395d1735077da26977a44}} 
+\mbox{\hyperlink{class_piece}{Piece}} \mbox{\hyperlink{class_board_a35e21e0a045395d1735077da26977a44}{get\+Board}} ()
+\begin{DoxyCompactList}\small\item\em Gives the board. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class who represent a board. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_board_a1e8a42da489bdfcc9d7c3ddb8e662bc9}\label{class_board_a1e8a42da489bdfcc9d7c3ddb8e662bc9}} 
+\index{Board@{Board}!getPiece@{getPiece}}
+\index{getPiece@{getPiece}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{getPiece()}{getPiece()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_piece}{Piece}} Board\+::get\+Piece (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_position}{Position}}}]{position }\end{DoxyParamCaption})}
+
+
+
+Gives a piece. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The position. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A piece. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_board_a9ebc7a70a2ee91147959910345ad4eac}\label{class_board_a9ebc7a70a2ee91147959910345ad4eac}} 
+\index{Board@{Board}!isFree@{isFree}}
+\index{isFree@{isFree}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{isFree()}{isFree()}}
+{\footnotesize\ttfamily bool Board\+::is\+Free (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_position}{Position}}}]{position }\end{DoxyParamCaption})}
+
+
+
+Determines if the position is free. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The position. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A boolean. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_board_a6e2c8d4dfb5b9b7cc5eae6d81cc2a5f9}\label{class_board_a6e2c8d4dfb5b9b7cc5eae6d81cc2a5f9}} 
+\index{Board@{Board}!isInside@{isInside}}
+\index{isInside@{isInside}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{isInside()}{isInside()}}
+{\footnotesize\ttfamily bool Board\+::is\+Inside (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_position}{Position}}}]{pos }\end{DoxyParamCaption})}
+
+
+
+Determines if the position is inside the board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & The position. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A boolean. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_board_a1233daa8ce9bcf312874fd81370c187b}\label{class_board_a1233daa8ce9bcf312874fd81370c187b}} 
+\index{Board@{Board}!isMyOwn@{isMyOwn}}
+\index{isMyOwn@{isMyOwn}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{isMyOwn()}{isMyOwn()}}
+{\footnotesize\ttfamily bool Board\+::is\+My\+Own (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_position}{Position}}}]{position,  }\item[{Player\+Color}]{color }\end{DoxyParamCaption})}
+
+
+
+Determines if a piece belong to a player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The position. \\
+\hline
+{\em color} & The color. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A boolean. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_board_a57aad4daea0b9786e8b60230d4eb6722}\label{class_board_a57aad4daea0b9786e8b60230d4eb6722}} 
+\index{Board@{Board}!push@{push}}
+\index{push@{push}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily void Board\+::push (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_piece}{Piece}}}]{p,  }\item[{\mbox{\hyperlink{class_position}{Position}}}]{pos }\end{DoxyParamCaption})}
+
+
+
+Make a movement. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & The piece. \\
+\hline
+{\em pos} & The position. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_board_af5494dd5fdd306e0cdaa336c1727b217}\label{class_board_af5494dd5fdd306e0cdaa336c1727b217}} 
+\index{Board@{Board}!remove@{remove}}
+\index{remove@{remove}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily void Board\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_position}{Position}}}]{position }\end{DoxyParamCaption})}
+
+
+
+Remove a piece at a position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The position. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Board.\+h\end{DoxyCompactItemize}

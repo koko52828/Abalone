@@ -1,0 +1,5 @@
+53046
+52828
+Structure du projet : « QtCreator »
+
+

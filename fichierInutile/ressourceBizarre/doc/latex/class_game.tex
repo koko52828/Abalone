@@ -1,0 +1,155 @@
+\hypertarget{class_game}{}\doxysection{Game Class Reference}
+\label{class_game}\index{Game@{Game}}
+
+
+Class who represent a game.  
+
+
+
+
+{\ttfamily \#include $<$Game.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_game_ad59df6562a58a614fda24622d3715b65}\label{class_game_ad59df6562a58a614fda24622d3715b65}} 
+\mbox{\hyperlink{class_game_ad59df6562a58a614fda24622d3715b65}{Game}} ()
+\begin{DoxyCompactList}\small\item\em Constructor of the game. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_player}{Player}} \mbox{\hyperlink{class_game_a3a86723aa2d2024fa9e06bc083cb670e}{get\+Current}} ()
+\begin{DoxyCompactList}\small\item\em Gives the current player. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_player}{Player}} \mbox{\hyperlink{class_game_ae6643055467aa052f24198fb7b9bb1ec}{get\+Opponent}} ()
+\begin{DoxyCompactList}\small\item\em Gives the opponent player. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_board}{Board}} \mbox{\hyperlink{class_game_a6d089ed1bc9e3776d118c00c833db15e}{get\+Board}} ()
+\begin{DoxyCompactList}\small\item\em Gives the board. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_a14073b7ee15e3a60b72112519be85453}\label{class_game_a14073b7ee15e3a60b72112519be85453}} 
+void \mbox{\hyperlink{class_game_a14073b7ee15e3a60b72112519be85453}{initialize}} ()
+\begin{DoxyCompactList}\small\item\em Initialize the game. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_game_ade81cae5bc177c541cb6cc98244edf03}\label{class_game_ade81cae5bc177c541cb6cc98244edf03}} 
+void \mbox{\hyperlink{class_game_ade81cae5bc177c541cb6cc98244edf03}{swap\+Player}} ()
+\begin{DoxyCompactList}\small\item\em Swap the current player and the opponent player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_game_a2d7a19b98239fc8be86724677d72f4de}{play}} (\mbox{\hyperlink{class_piece}{Piece}} piece, \mbox{\hyperlink{class_position}{Position}} pos)
+\begin{DoxyCompactList}\small\item\em Make a move of a piece. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_ab8536df425c768f3524c87de99aa9cd9}{is\+Over}} ()
+\begin{DoxyCompactList}\small\item\em determines if the game is over. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_acd40bdf77174a28e4bd9178df0962d62}{can\+Play}} (\mbox{\hyperlink{class_piece}{Piece}} p, \mbox{\hyperlink{class_position}{Position}} pos)
+\begin{DoxyCompactList}\small\item\em Determines if a movement is possible. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_game_adc9eca0b532337c86c426d0821f2a2f7}{nbr\+Of\+Current\+Piece}} (\mbox{\hyperlink{class_player}{Player}} player)
+\begin{DoxyCompactList}\small\item\em Gives the number of piece of a player. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class who represent a game. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_acd40bdf77174a28e4bd9178df0962d62}\label{class_game_acd40bdf77174a28e4bd9178df0962d62}} 
+\index{Game@{Game}!canPlay@{canPlay}}
+\index{canPlay@{canPlay}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{canPlay()}{canPlay()}}
+{\footnotesize\ttfamily bool Game\+::can\+Play (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_piece}{Piece}}}]{p,  }\item[{\mbox{\hyperlink{class_position}{Position}}}]{pos }\end{DoxyParamCaption})}
+
+
+
+Determines if a movement is possible. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & The concerned piece. \\
+\hline
+{\em pos} & The position. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A boolean. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_a6d089ed1bc9e3776d118c00c833db15e}\label{class_game_a6d089ed1bc9e3776d118c00c833db15e}} 
+\index{Game@{Game}!getBoard@{getBoard}}
+\index{getBoard@{getBoard}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getBoard()}{getBoard()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_board}{Board}} Game\+::get\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gives the board. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_board}{Board}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_a3a86723aa2d2024fa9e06bc083cb670e}\label{class_game_a3a86723aa2d2024fa9e06bc083cb670e}} 
+\index{Game@{Game}!getCurrent@{getCurrent}}
+\index{getCurrent@{getCurrent}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getCurrent()}{getCurrent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player}{Player}} Game\+::get\+Current (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gives the current player. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_player}{Player}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_ae6643055467aa052f24198fb7b9bb1ec}\label{class_game_ae6643055467aa052f24198fb7b9bb1ec}} 
+\index{Game@{Game}!getOpponent@{getOpponent}}
+\index{getOpponent@{getOpponent}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getOpponent()}{getOpponent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_player}{Player}} Game\+::get\+Opponent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gives the opponent player. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{class_player}{Player}}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_ab8536df425c768f3524c87de99aa9cd9}\label{class_game_ab8536df425c768f3524c87de99aa9cd9}} 
+\index{Game@{Game}!isOver@{isOver}}
+\index{isOver@{isOver}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{isOver()}{isOver()}}
+{\footnotesize\ttfamily bool Game\+::is\+Over (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+determines if the game is over. 
+
+\begin{DoxyReturn}{Returns}
+A boolean. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_adc9eca0b532337c86c426d0821f2a2f7}\label{class_game_adc9eca0b532337c86c426d0821f2a2f7}} 
+\index{Game@{Game}!nbrOfCurrentPiece@{nbrOfCurrentPiece}}
+\index{nbrOfCurrentPiece@{nbrOfCurrentPiece}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{nbrOfCurrentPiece()}{nbrOfCurrentPiece()}}
+{\footnotesize\ttfamily int Game\+::nbr\+Of\+Current\+Piece (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}}]{player }\end{DoxyParamCaption})}
+
+
+
+Gives the number of piece of a player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & The player. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An integer. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_game_a2d7a19b98239fc8be86724677d72f4de}\label{class_game_a2d7a19b98239fc8be86724677d72f4de}} 
+\index{Game@{Game}!play@{play}}
+\index{play@{play}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily void Game\+::play (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_piece}{Piece}}}]{piece,  }\item[{\mbox{\hyperlink{class_position}{Position}}}]{pos }\end{DoxyParamCaption})}
+
+
+
+Make a move of a piece. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em piece} & The piece who are concerned. \\
+\hline
+{\em pos} & The position who the piece should be. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Game.\+h\end{DoxyCompactItemize}
